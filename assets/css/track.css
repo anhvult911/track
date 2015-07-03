@@ -1,0 +1,111 @@
+.wrap-table{
+    white-space:nowrap;
+    display: table;
+    /*    height: 535px;
+        min-height: 535px;*/
+}
+
+.column {    
+    margin: 5px;        
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding: 0 0 5px; 
+}
+.column .item {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 0.25em;
+    border: none;
+    background: #149bdf; 
+    height: 80px;
+    cursor: pointer;
+}
+.column .item span{
+    width: 30px;
+    display: inline-block;
+    background-color: white;
+    color: #0099f7;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.item-placeholder {
+    border: none;   
+    background-color: #ccc;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: 1.2em;
+    height: 80px;
+    margin: 0 5px 5px;
+    padding: 5px;
+}
+.list {
+    background: #E8E8E8 none repeat scroll 0 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-height: 100%;                
+    width: 200px;
+    min-width: 200px;
+    /*display:inline-table;*/
+    display: table-cell;
+    border-right: 5px solid #ffffff;
+    margin: 0px 2px;
+}
+.list-header {
+    min-height: 19px;
+    padding: 8px 34px 8px 10px;
+    position: relative;
+    text-align: center;
+}
+.list-header p,h2{
+    margin: 0px;
+}
+.list-header p{
+    font-size: 20px;
+}
+.hd-modal-footer{
+    text-align: center; 
+}
+.hd-modal-footer button{
+    width: 150px;
+}
+.hd-modal-footer .button-cancel{
+    background-color: #ccc;
+}
+.column-footer {    
+    margin: 5px;        
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding: 0px; 
+}
+.btn-add-card{
+    background: none;
+    border: 1px dashed grey;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: 1.2em;
+    height: 80px;
+    margin: 0 5px 5px;
+    padding: 5px;
+    width: 95%;
+}
+.wrap-column{    
+    margin: 5px;       
+    /*    height:350px;
+        overflow-y:auto;
+        overflow-x:hidden;*/
+}
+
+/*fix bg popover display does not full text*/ 
+.list .popover{
+    position: fixed !important;
+}
+
+.flash_message {
+    padding: 5px;
+    background: red none repeat scroll 0 0;
+    color: white;
+    display: inline;
+    margin: 5px;
+}
