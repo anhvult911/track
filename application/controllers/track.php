@@ -5,7 +5,8 @@
  *
  * @author Anh Vu
  */
-define('PARSE_SDK_DIR', './Parse/');
+// define('PARSE_SDK_DIR', './Parse/');
+require 'vendor/autoload.php';
 
 // Add the "use" declarations where you'll be using the classes
 use Parse\ParseClient;
@@ -38,8 +39,8 @@ class Track extends CI_Controller {
             $results = $this->prepare_for_save_update($data_post);
             exit(json_encode($results));
         }
-        $this->getInfoForView();
-//        $this->getInfoForView_Parse();
+        // $this->getInfoForView();
+       $this->getInfoForView_Parse();
     }
 
     /**
@@ -136,11 +137,11 @@ class Track extends CI_Controller {
         $data_save['info'] = json_encode($data_default);
         $this->load->Model("mtrack");
         if (empty($id)) {
-//            return $this->save_on_parse($data_save);
-            return $this->mtrack->save($data_save);
+           return $this->save_on_parse($data_save);
+            // return $this->mtrack->save($data_save);
         } else {
-//            return $this->update_on_parse($id, $data_save);
-            return $this->mtrack->update($id, $data_save);
+           return $this->update_on_parse($id, $data_save);
+            // return $this->mtrack->update($id, $data_save);
         }
     }
 
